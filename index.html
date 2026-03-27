@@ -254,7 +254,7 @@
                 gif.on("finished", blob => {
                     const a = document.createElement("a");
                     a.href = URL.createObjectURL(blob);
-                    a.download = "animation_max_quality.gif";
+                    a.download = "animaja.gif";
                     a.click();
                     status.textContent = "GIF Done!";
                     exportBtn.disabled = false;
@@ -396,7 +396,7 @@
                 let blob = new Blob([buffer], { type: 'video/mp4' });
                 const a = document.createElement("a");
                 a.href = URL.createObjectURL(blob);
-                a.download = "animation_lossless.mp4";
+                a.download = "animaja.mp4";
                 a.click();
 
                 status.textContent = "Video export complete!";
